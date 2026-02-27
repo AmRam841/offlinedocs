@@ -1,0 +1,208 @@
+{
+    "content": [
+        {
+            "type": "h1",
+            "text": "Python Data Types"
+        },
+        {
+            "type": "p",
+            "text": "Data types in Python are a way to classify data items. They represent the kind of value, which determines what operations can be performed on that data. Since everything is an object in Python programming, Python data types are classes and variables are instances (objects) of these classes."
+        },
+        {
+            "type": "p",
+            "text": "The following are standard or built-in data types in Python:"
+        },
+        {
+            "type": "p",
+            "text": "Below code assigns variable 'x' different values of few Python data types - int, float, list, tuple and string. Each assignment replaces previous value, making 'x' take on data type and value of most recent assignment."
+        },
+        {
+            "type": "h2",
+            "text": "1. Numeric Data Types"
+        },
+        {
+            "type": "p",
+            "text": "Python numbersrepresent data that has a numeric value. A numeric value can be an integer, a floating number or even a complex number. These values are defined as int, float and complex classes."
+        },
+        {
+            "type": "h2",
+            "text": "2. Sequence Data Types"
+        },
+        {
+            "type": "p",
+            "text": "A sequence is an ordered collection of items, which can be of similar or different data types. Sequences allow storing of multiple values in an organized and efficient fashion. There are several sequence data types of Python:"
+        },
+        {
+            "type": "h3",
+            "text": "String Data Type"
+        },
+        {
+            "type": "p",
+            "text": "Python Strings are arrays of bytes representing Unicode characters. In Python, there is no character data type, a character is a string of length one. It is represented by str class."
+        },
+        {
+            "type": "p",
+            "text": "Strings in Python can be created using single quotes, double quotes or even triple quotes. We can access individual characters of a String using index."
+        },
+        {
+            "type": "h3",
+            "text": "List Data Type"
+        },
+        {
+            "type": "p",
+            "text": "Lists are similar to arrays found in other languages. They are an ordered and mutable collection of items. It is very flexible as items in a list do not need to be of the same type."
+        },
+        {
+            "type": "p",
+            "text": "Creating a List in Python"
+        },
+        {
+            "type": "p",
+            "text": "Lists in Python can be created by just placing sequence inside the square brackets[]."
+        },
+        {
+            "type": "p",
+            "text": "Access List Items"
+        },
+        {
+            "type": "p",
+            "text": "In order to access the list items refer to index number. In Python, negative sequence indexes represent positions from end of the array. Instead of having to compute offset as in List[len(List)-3], it is enough to just write List[-3]. Negative indexing means beginning from end, -1 refers to last item, -2 refers to second-last item, etc."
+        },
+        {
+            "type": "h3",
+            "text": "Tuple Data Type"
+        },
+        {
+            "type": "p",
+            "text": "Tuple is an ordered collection of Python objects. The only difference between a tuple and a list is that tuples are immutable. Tuples cannot be modified after it is created."
+        },
+        {
+            "type": "p",
+            "text": "Creating a Tuple in Python"
+        },
+        {
+            "type": "p",
+            "text": "In Python, tuples are created by placing a sequence of values separated by a ‘comma’ with or without the use of parentheses for grouping data sequence. Tuples can contain any number of elements and of any datatype (like strings, integers, lists, etc.)."
+        },
+        {
+            "type": "p",
+            "text": "Note:Tuples can also be created with a single element, but it is a bit tricky. Having one element in the parentheses is not sufficient, there must be a trailing‘comma’to make it a tuple."
+        },
+        {
+            "type": "p",
+            "text": "Note- The creation of a Python tuple without the use of parentheses is known as Tuple Packing."
+        },
+        {
+            "type": "p",
+            "text": "Access Tuple Items"
+        },
+        {
+            "type": "p",
+            "text": "In order to access tuple items refer to the index number. Use the index operator [ ] to access an item in a tuple."
+        },
+        {
+            "type": "h2",
+            "text": "3. Boolean Data Type"
+        },
+        {
+            "type": "p",
+            "text": "Python BooleanData type is one of the two built-in values, True or False. Boolean objects that are equal to True are truthy (true) and those equal to False are falsy (false). However non-Boolean objects can be evaluated in a Boolean context as well and determined to be true or false. It is denoted by class bool."
+        },
+        {
+            "type": "p",
+            "text": "Output:"
+        },
+        {
+            "type": "p",
+            "text": "<class 'bool'><class 'bool'>"
+        },
+        {
+            "type": "p",
+            "text": "Traceback (most recent call last):File \"/home/7e8862763fb66153d70824099d4f5fb7.py\", line 8, inprint(type(true))NameError: name 'true' is not defined"
+        },
+        {
+            "type": "h3",
+            "text": "Truthy and Falsy Values"
+        },
+        {
+            "type": "p",
+            "text": "In Python,truthy and falsyvalues are values that evaluate to True or False in a Boolean context. Truthy values behave like True, while falsy values behave like False when used in conditions."
+        },
+        {
+            "type": "h2",
+            "text": "4. Set Data Type"
+        },
+        {
+            "type": "p",
+            "text": "In Python Data Types, Set is an unordered collection of data types that is iterable, mutable, and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements."
+        },
+        {
+            "type": "h3",
+            "text": "Create a Set in Python"
+        },
+        {
+            "type": "p",
+            "text": "Sets can be created by using the built-in set() function with an iterable object or a sequence by placing the sequence inside curly braces, separated by a  ‘comma’. The type of elements in a set need not be the same, various mixed-up data type values can also be passed to the set."
+        },
+        {
+            "type": "h3",
+            "text": "Access Set Items"
+        },
+        {
+            "type": "p",
+            "text": "Set items cannot be accessed by referring to an index, since sets are unordered the items have no index. But we can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the keyword in."
+        },
+        {
+            "type": "h2",
+            "text": "5. Dictionary Data Type"
+        },
+        {
+            "type": "p",
+            "text": "Adictionaryin Python is a collection of data values, used to store data values like a map, unlike other Python Data Types, a Dictionary holds a key: value pair. Key-value is provided in dictionary to make it more optimized. Each key-value pair in a Dictionary is separated by a colon : , whereas each key is separated by a ‘comma’."
+        },
+        {
+            "type": "h3",
+            "text": "Create a Dictionary in Python"
+        },
+        {
+            "type": "p",
+            "text": "Values in a dictionary can be of any datatype and can be duplicated, whereas keys can’t be repeated and must be immutable. The dictionary can also be created by the built-in functiondict()."
+        },
+        {
+            "type": "p",
+            "text": "Note- Dictionary keys are case sensitive, the same name but different cases of Key will be treated distinctly."
+        },
+        {
+            "type": "h3",
+            "text": "Accessing Key-value in Dictionary"
+        },
+        {
+            "type": "p",
+            "text": "In order to access items of a dictionary refer to its key name. Key can be used inside square brackets. Using get() method we can access dictionary elements."
+        },
+        {
+            "type": "h3",
+            "text": "Recommended Problems:"
+        },
+        {
+            "type": "h3",
+            "text": "Related Links:"
+        },
+        {
+            "type": "p",
+            "text": "0Questions"
+        },
+        {
+            "type": "p",
+            "text": "Your Score :0/0"
+        },
+        {
+            "type": "p",
+            "text": "Accuracy :0%"
+        },
+        {
+            "type": "h3",
+            "text": "Explore"
+        }
+    ]
+}

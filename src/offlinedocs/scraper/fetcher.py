@@ -49,7 +49,7 @@ class Fetcher:
     """
     a function for async fethcing 
     """
-    def __init__(self,url):
+    def __init__(self):
         retry = hretry.Retry(total=5, backoff_factor=0.5)
         transport = hretry.RetryTransport(retry=retry)
     
@@ -74,11 +74,12 @@ class Fetcher:
         
         try:
             response = await self.client.get(url)
+            
             response.raise_for_status()
             if response.status_code == 429:
                 logger.warning(f"rate limited on {url}")
-                print(response)
-            return response
+                
+            return response.text
 
         except httpx.HTTPError as exc:
             
