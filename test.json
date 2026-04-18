@@ -17,12 +17,24 @@
             "text": "Below code assigns variable 'x' different values of few Python data types - int, float, list, tuple and string. Each assignment replaces previous value, making 'x' take on data type and value of most recent assignment."
         },
         {
+            "type": "pre",
+            "text": "x=50# intx=60.5# floatx=\"Hello World\"# stringx=[\"geeks\",\"for\",\"geeks\"]# listx=(\"geeks\",\"for\",\"geeks\")# tuple"
+        },
+        {
             "type": "h2",
             "text": "1. Numeric Data Types"
         },
         {
             "type": "p",
             "text": "Python numbersrepresent data that has a numeric value. A numeric value can be an integer, a floating number or even a complex number. These values are defined as int, float and complex classes."
+        },
+        {
+            "type": "pre",
+            "text": "a=5print(type(a))b=5.0print(type(b))c=2+4jprint(type(c))"
+        },
+        {
+            "type": "pre",
+            "text": "<class 'int'>\n<class 'float'>\n<class 'complex'>"
         },
         {
             "type": "h2",
@@ -45,6 +57,14 @@
             "text": "Strings in Python can be created using single quotes, double quotes or even triple quotes. We can access individual characters of a String using index."
         },
         {
+            "type": "pre",
+            "text": "s='Welcome to the Geeks World'print(s)# check data typeprint(type(s))# access string with indexprint(s[1])print(s[2])print(s[-1])"
+        },
+        {
+            "type": "pre",
+            "text": "Welcome to the Geeks World\n<class 'str'>\ne\nl\nd"
+        },
+        {
             "type": "h3",
             "text": "List Data Type"
         },
@@ -61,12 +81,28 @@
             "text": "Lists in Python can be created by just placing sequence inside the square brackets[]."
         },
         {
+            "type": "pre",
+            "text": "# Empty lista=[]# list with int valuesa=[1,2,3]print(a)# list with mixed values int and Stringb=[\"Geeks\",\"For\",\"Geeks\",4,5]print(b)"
+        },
+        {
+            "type": "pre",
+            "text": "[1, 2, 3]\n['Geeks', 'For', 'Geeks', 4, 5]"
+        },
+        {
             "type": "p",
             "text": "Access List Items"
         },
         {
             "type": "p",
             "text": "In order to access the list items refer to index number. In Python, negative sequence indexes represent positions from end of the array. Instead of having to compute offset as in List[len(List)-3], it is enough to just write List[-3]. Negative indexing means beginning from end, -1 refers to last item, -2 refers to second-last item, etc."
+        },
+        {
+            "type": "pre",
+            "text": "a=[\"Geeks\",\"For\",\"Geeks\"]print(\"Accessing element from the list\")print(a[0])print(a[2])print(\"Accessing element using negative indexing\")print(a[-1])print(a[-3])"
+        },
+        {
+            "type": "pre",
+            "text": "Accessing element from the list\nGeeks\nGeeks\nAccessing element using negative indexing\nGeeks\nGeeks"
         },
         {
             "type": "h3",
@@ -89,6 +125,14 @@
             "text": "Note:Tuples can also be created with a single element, but it is a bit tricky. Having one element in the parentheses is not sufficient, there must be a trailing‘comma’to make it a tuple."
         },
         {
+            "type": "pre",
+            "text": "# initiate empty tupletup1=()tup2=('Geeks','For')print(\"\\nTuple with the use of String: \",tup2)"
+        },
+        {
+            "type": "pre",
+            "text": "Tuple with the use of String:  ('Geeks', 'For')"
+        },
+        {
             "type": "p",
             "text": "Note- The creation of a Python tuple without the use of parentheses is known as Tuple Packing."
         },
@@ -101,12 +145,24 @@
             "text": "In order to access tuple items refer to the index number. Use the index operator [ ] to access an item in a tuple."
         },
         {
+            "type": "pre",
+            "text": "tup1=(1,2,3,4,5)# access tuple itemsprint(tup1[0])print(tup1[-1])print(tup1[-3])"
+        },
+        {
+            "type": "pre",
+            "text": "1\n5\n3"
+        },
+        {
             "type": "h2",
             "text": "3. Boolean Data Type"
         },
         {
             "type": "p",
             "text": "Python BooleanData type is one of the two built-in values, True or False. Boolean objects that are equal to True are truthy (true) and those equal to False are falsy (false). However non-Boolean objects can be evaluated in a Boolean context as well and determined to be true or false. It is denoted by class bool."
+        },
+        {
+            "type": "pre",
+            "text": "print(type(True))print(type(False))print(type(true))"
         },
         {
             "type": "p",
@@ -129,6 +185,14 @@
             "text": "In Python,truthy and falsyvalues are values that evaluate to True or False in a Boolean context. Truthy values behave like True, while falsy values behave like False when used in conditions."
         },
         {
+            "type": "pre",
+            "text": "if1:print(\"1 is truthy\")ifnot0:print(\"0 is falsy\")"
+        },
+        {
+            "type": "pre",
+            "text": "1 is truthy\n0 is falsy"
+        },
+        {
             "type": "h2",
             "text": "4. Set Data Type"
         },
@@ -145,12 +209,28 @@
             "text": "Sets can be created by using the built-in set() function with an iterable object or a sequence by placing the sequence inside curly braces, separated by a  ‘comma’. The type of elements in a set need not be the same, various mixed-up data type values can also be passed to the set."
         },
         {
+            "type": "pre",
+            "text": "# initializing empty sets1=set()s1=set(\"GeeksForGeeks\")print(\"Set with the use of String: \",s1)s2=set([\"Geeks\",\"For\",\"Geeks\"])print(\"Set with the use of List: \",s2)"
+        },
+        {
+            "type": "pre",
+            "text": "Set with the use of String:  {'s', 'o', 'F', 'G', 'e', 'k', 'r'}\nSet with the use of List:  {'Geeks', 'For'}"
+        },
+        {
             "type": "h3",
             "text": "Access Set Items"
         },
         {
             "type": "p",
             "text": "Set items cannot be accessed by referring to an index, since sets are unordered the items have no index. But we can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the keyword in."
+        },
+        {
+            "type": "pre",
+            "text": "set1=set([\"Geeks\",\"For\",\"Geeks\"])#Duplicates are removed automaticallyprint(set1)# loop through setforiinset1:print(i,end=\" \")#prints elements one by one# check if item exist in setprint(\"Geeks\"inset1)"
+        },
+        {
+            "type": "pre",
+            "text": "{'For', 'Geeks'}\nFor Geeks True"
         },
         {
             "type": "h2",
@@ -173,12 +253,28 @@
             "text": "Note- Dictionary keys are case sensitive, the same name but different cases of Key will be treated distinctly."
         },
         {
+            "type": "pre",
+            "text": "# initialize empty dictionaryd={}d={1:'Geeks',2:'For',3:'Geeks'}print(d)# creating dictionary using dict() constructord1=dict({1:'Geeks',2:'For',3:'Geeks'})print(d1)"
+        },
+        {
+            "type": "pre",
+            "text": "{1: 'Geeks', 2: 'For', 3: 'Geeks'}\n{1: 'Geeks', 2: 'For', 3: 'Geeks'}"
+        },
+        {
             "type": "h3",
             "text": "Accessing Key-value in Dictionary"
         },
         {
             "type": "p",
             "text": "In order to access items of a dictionary refer to its key name. Key can be used inside square brackets. Using get() method we can access dictionary elements."
+        },
+        {
+            "type": "pre",
+            "text": "d={1:'Geeks','name':'For',3:'Geeks'}# Accessing an element using keyprint(d['name'])# Accessing a element using getprint(d.get(3))"
+        },
+        {
+            "type": "pre",
+            "text": "For\nGeeks"
         },
         {
             "type": "h3",
